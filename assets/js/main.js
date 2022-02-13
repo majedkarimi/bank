@@ -36,8 +36,13 @@ const account5 = {
   interestRate: 2,
   pin: 1234,
 };
-
-const accounts = [account1, account2, account3, account4, account5];
+const account6 = {
+  owner: 'Arezu Maghsoudi',
+  movements: [120, 344, 678, 43000, -300, -400, 5000, -2000],
+  interestRate: 2,
+  pin: 2345,
+};
+const accounts = [account1, account2, account3, account4, account5, account6];
 
 /*---------------------------------------------- 
   # 2. select  Elements
@@ -291,7 +296,7 @@ labelBalance.addEventListener('click', function () {
   console.log(movementsUI2);
 });
 
-// more and more 
+// more and more
 
 const majed = accounts.find(mov => mov.owner === 'Majed Karimi');
 console.log(majed);
